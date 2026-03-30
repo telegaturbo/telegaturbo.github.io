@@ -1,0 +1,125 @@
+@import url(/fonts.css);
+
+html,
+body {
+  background-color: #1d1e1f;
+  margin: 0px;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  justify-self: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+body #logo {
+  width: 200px;
+  margin-top: 10px;
+}
+
+h1,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  color: #f0f0f0;
+  font-family: "Open Sans";
+  margin-top: 30px;
+  text-align: center;
+}
+p {
+  color: #f0f0f0;
+  font-family: "Open Sans";
+  margin-top: 20px;
+
+  margin-bottom: 32px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+  position: relative;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+section .step-number {
+  color: #0b8ada;
+  font-family: "Open Sans";
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 100%;
+  border: 2px solid #0b8ada;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+}
+
+section .step-instruction {
+  display: flex;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.btn-container {
+  width: 100%;
+  margin: 35px 0px;
+}
+
+.btn-container a {
+  display: flex;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-family: "Open Sans";
+  width: 100%;
+  justify-content: center;
+  border-radius: 3px;
+  pointer-events: none;
+
+  background-color: #303233;
+  opacity: 0.5;
+}
+
+.btn-container a.active {
+  background-color: #15aee8;
+  filter: brightness(1);
+  pointer-events: all;
+  opacity: 1;
+
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}

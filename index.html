@@ -1,10 +1,30 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Мой сайт</title>
-</head>
-<body>
-    <h1>Привет!</h1>
-    <p>Это мой сайт на GitHub Pages.</p>
-</body>
+  <head>
+    <title>Телега Турбо</title>
+
+    <link href="/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/index.min.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <img id="logo" src="/image.png" alt="Телега Турбо" />
+    <h1>Не теряй связь в Telegram!</h1>
+    <section id="step-1">
+      <span class="step-instruction">1. Подключи временный прокси </span>
+    </section>
+    <div class="btn-container">
+      <a id="connect" class="active">Подключить</a>
+    </div>
+    <section id="step-2">
+      <span class="step-instruction">2. Активируй бота</span>
+    </section>
+    <div class="btn-container">
+      <a
+        href="tg://resolve?domain=telegaturbo_bot&start=telegaturbo.github.io"
+        id="activate"
+        >Активировать</a
+      >
+    </div>
+  </body>
 </html>
